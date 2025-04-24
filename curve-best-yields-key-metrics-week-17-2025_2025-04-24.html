@@ -4,40 +4,40 @@
 
     /* ===== ДОБАВИТЬ В КОНЕЦ style_block: ================================ */
 
-    /* 1. Constrain the main header to 720 px and center it */
-    .article-header.gh-canvas {
-      max-width: 720px;
-      margin: 0 auto;
-      padding-left: clamp(16px, 4vw, 32px);
-      padding-right: clamp(16px, 4vw, 32px);
+    /* 1. сам header в тот же «коридор» 720 px */
+    .article-header.gh-canvas,
+    .gh-content {
+        max-width: 720px;
+        margin: 0 auto;
+        padding-left: clamp(16px, 4vw, 32px);
+        padding-right: clamp(16px, 4vw, 32px);
     }
-
-    /* 2. Make .kg-gallery-card and .kg-width-wide galleries flex-wrap */
+    /* 2. «карточки доходностей» из Ghost-галереи делаем резиновыми   */
     .kg-gallery-card,
-    .kg-width-wide {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;               /* match Ghost’s default gutter */
+    .kg-width-wide{
+        display:flex;
+        flex-wrap:wrap;
+        gap:24px;               /* расстояние как на оригинале */
     }
     .kg-gallery-card figure,
-    .kg-width-wide figure {
-      flex: 1 1 calc(33.333% - 24px);   /* three items per row, minus the gap */
-      min-width: 220px;                 /* don’t shrink below this on small screens */
+    .kg-width-wide figure{
+        flex:1 1 calc(33.333% - 24px);   /* три в ряд, но ужимаются вместе с контейнером */
+        min-width:220px;                 /* чтобы на телефоне не схлопывались */
     }
     .kg-gallery-card img,
-    .kg-width-wide img {
-      width: 100% !important;           /* ensure images fill their figure */
-      height: auto;
+    .kg-width-wide img{
+        width:100%!important;            /* главное: не выходить за figure */
+        height:auto;
     }
     </style></head><article class="article post tag-yields tag-metrics tag-rewards">
 <header class="article-header gh-canvas">
 <div class="article-tag post-card-tags">
 <span class="post-card-primary-tag">
-<a href="https://news.curve.fi/tag/yields/">Доходности</a>
+<a href="https://news.curve.fi/tag/yields/">Доходность</a>
 </span>
 </div>
-<h1 class="article-title">Лучшие доходности и ключевые метрики Curve | 17 неделя, 2025</h1>
-<p class="article-excerpt">Обновления еженедельной доходности и метрик экосистемы Curve по состоянию на 24 апреля 2025 года</p>
+<h1 class="article-title">Лучшие доходности Curve и ключевые показатели | Неделя 17, 2025</h1>
+<p class="article-excerpt">Обновления недельной доходности и показателей экосистемы Curve на 24 апреля 2025 года</p>
 <div class="article-byline">
 <section class="article-byline-content">
 <ul class="author-list instapaper_ignore">
@@ -51,21 +51,21 @@
 <h4 class="author-name"><a href="https://news.curve.fi/author/saint/">Сент-Рат</a></h4>
 <div class="byline-meta-content">
 <time class="byline-meta-date" datetime="2025-04-24">24 апр 2025</time>
-<span class="byline-reading-time"><span class="bull">•</span>12 мин чтения</span>
+<span class="byline-reading-time"><span class="bull">•</span> 12 мин чтения</span>
 </div>
 </div>
 </section>
 </div>
 <figure class="article-image">
 <img alt="Curve Best Yields &amp; Key Metrics | Week 17, 2025" sizes="(min-width: 1400px) 1400px, 92vw" src="https://news.curve.fi/content/images/size/w2000/2025/04/curve-yields-week17-2025-banner-2.png" srcset="https://news.curve.fi/content/images/size/w300/2025/04/curve-yields-week17-2025-banner-2.png 300w, https://news.curve.fi/content/images/size/w600/2025/04/curve-yields-week17-2025-banner-2.png 600w, https://news.curve.fi/content/images/size/w1000/2025/04/curve-yields-week17-2025-banner-2.png 1000w, https://news.curve.fi/content/images/size/w2000/2025/04/curve-yields-week17-2025-banner-2.png 2000w"/>
-<figcaption><b><strong style="white-space: pre-wrap;">Топ доходностей недели</strong></b><span style="white-space: pre-wrap;">: Первое место занимает dTRINITY</span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-48/deposit"><span style="white-space: pre-wrap;">пул dUSD/sfrxUSD</span></a><span style="white-space: pre-wrap;">с</span><b><strong style="white-space: pre-wrap;">99.6% доходностью</strong></b><span style="white-space: pre-wrap;">, а третье место занимает их</span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-46/deposit"><span style="white-space: pre-wrap;">пул dUSD/sUSDe</span></a><span style="white-space: pre-wrap;">с</span><b><strong style="white-space: pre-wrap;">52.2%</strong></b><span style="white-space: pre-wrap;">доходностью, оба на Fraxtal. Пул</span><a href="https://curve.fi/dex/#/fantom/pools/factory-stable-ng-43/deposit"><span style="white-space: pre-wrap;">Stable 2 от CrossCurve</span></a><span style="white-space: pre-wrap;">занимает второе место с</span><b><strong style="white-space: pre-wrap;">56.0% доходностью</strong></b><span style="white-space: pre-wrap;">на USD-стейблкоинах на Fantom.</span></figcaption>
+<figcaption><b><strong style="white-space: pre-wrap;">Лучшие доходности недели</strong></b><span style="white-space: pre-wrap;">: Первое место занимает dTRINITY </span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-48/deposit"><span style="white-space: pre-wrap;">пул dUSD/sfrxUSD</span></a><span style="white-space: pre-wrap;"> с </span><b><strong style="white-space: pre-wrap;">99.6% доходностью</strong></b><span style="white-space: pre-wrap;">, а третье место занимает их </span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-46/deposit"><span style="white-space: pre-wrap;">пул dUSD/sUSDe</span></a><span style="white-space: pre-wrap;"> с </span><b><strong style="white-space: pre-wrap;">52.2%</strong></b><span style="white-space: pre-wrap;"> доходностью, оба на Fraxtal. Пул CrossCurve </span><a href="https://curve.fi/dex/#/fantom/pools/factory-stable-ng-43/deposit"><span style="white-space: pre-wrap;">Stable 2</span></a><span style="white-space: pre-wrap;"> занимает второе место с </span><b><strong style="white-space: pre-wrap;">56.0% доходностью</strong></b><span style="white-space: pre-wrap;"> по USD стейблкоинам на Fantom.</span></figcaption>
 </figure>
 </header>
 <section class="gh-content gh-canvas">
-<h2 id="market-overview">Обзор рынка</h2><p><strong>Как же хороша была эта неделя для Curve — TVL вырос на 6.63% до $1.977B.</strong></p><p>На этой неделе есть множество возможностей для получения доходности.<strong>9 пулов и кредитных рынков предлагают более 38% доходности на USD-стейблкоинах</strong>сейчас, многие из которых приходят от щедрых стимулов, доступных на<a href="https://curve.fi/dex/optimism/pools/?ref=news.curve.fi" rel="noreferrer">пулов Optimism</a>и<a href="https://curve.fi/lend/optimism/markets/?ref=news.curve.fi" rel="noreferrer">кредитных рынков</a>.</p><p><a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">Llamalend</a>и<a href="https://curve.fi/crvusd/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">crvUSD</a>продолжают показывать силу с каждой неделей, все больше заемщиков пользуются низкими ставками — а кредиторы получают выгоды от<a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer">Resupply</a>и его интеграции с<a href="https://curve.fi/?ref=news.curve.fi" rel="noreferrer">Curve</a>.</p><p><a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer">Рынки Napier</a>также стабильно приносят все больше TVL каждую неделю. Посмотрите на ключевые моменты ниже для получения информации о лучших возможностях и метриках экосистемы.</p><h2 id="top-yields">Топ доходностей</h2><h3 id="top-usd-stablecoin-yields">Топ доходностей по USD-стейблкоинам</h3><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+<h2 id="market-overview">Обзор рынка</h2><p><strong>Какая неделя выдалась для Curve — TVL вырос на 6.63% и достиг $1.977B.</strong></p><p>На этой неделе есть множество возможностей для получения доходности. <strong>9 пулов и кредитных рынков предлагают более 38% доходности по USD стейблкоинам</strong> прямо сейчас, большинство из которых связано с щедрыми стимулами, доступными на <a href="https://curve.fi/dex/optimism/pools/?ref=news.curve.fi" rel="noreferrer">пули Optimism</a> и <a href="https://curve.fi/lend/optimism/markets/?ref=news.curve.fi" rel="noreferrer">кредитные рынки</a>.</p><p><a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">Llamalend</a> и <a href="https://curve.fi/crvusd/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">crvUSD</a> по-прежнему показывают силу из недели в неделю, когда все больше заемщиков пользуются низкими ставками — а кредиторы получают выгоду от <a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer">интеграции Resupply</a>с <a href="https://curve.fi/?ref=news.curve.fi" rel="noreferrer">Curve</a>.</p><p><a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer">Рынки Napier</a> также стабильно привлекают больше TVL каждую неделю. Ознакомьтесь с основными моментами ниже для лучших возможностей и показателей экосистемы.</p><h2 id="top-yields">Лучшие доходности</h2><h3 id="top-usd-stablecoin-yields">Лучшие доходности USD стейблкоинов</h3><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th>Цепочка</th>
+<th>Цепь</th>
 <th>Рынок</th>
 <th>Тип</th>
 <th>Доходность</th>
@@ -127,10 +127,10 @@
 <td>38.5%</td>
 </tr>
 </tbody>
-</table></div><h3 id="top-alternative-asset-yields">Топ доходностей альтернативных активов</h3><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+</table></div><h3 id="top-alternative-asset-yields">Лучшие доходности альтернативных активов</h3><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th>Цепочка</th>
+<th>Цепь</th>
 <th>Пул</th>
 <th>Тип</th>
 <th>Доходность</th>
@@ -198,17 +198,17 @@
 <td>5.1%</td>
 </tr>
 </tbody>
-</table></div><h2 id="ecosystem-metrics">Метрики экосистемы</h2><p><em>Все изменения (показанные с + или -) представляют собой разницу по сравнению с показателями за неделю назад.</em></p><h3 id="crvusd-scrvusd-metrics">Метрики crvUSD и scrvUSD</h3><p>PegKeepers crvUSD продолжают выполнять свою работу, выступая в роли поддержки ликвидности в пулах crvUSD и стабилизируя пег. Это упрощает для крупных заемщиков использование позиций без проблем.</p><p>Если вы хотите взять заем под свои ETH или BTC, Curve остается одним из лучших мест для этого, не удивительно, что к Curve каждую неделю приходит все больше заемщиков.</p><div class="curve-table-container"><table class="dataframe curve-table crvusd-metric-column">
+</table></div><h2 id="ecosystem-metrics">Показатели экосистемы</h2><p><em>Все изменения (показанные с + или -) представляют собой разницу по сравнению с значениями за неделю назад.</em></p><h3 id="crvusd-scrvusd-metrics">Показатели crvUSD и scrvUSD</h3><p>PegKeepers crvUSD продолжают свою работу, включаясь для увеличения ликвидности в пулах crvUSD и стабилизации пега. Это облегчает более крупным заемщикам бесшовное использование позиций.</p><p>Если вы хотите занять под залог своего ETH или BTC, Curve по-прежнему остается одним из лучших мест для этого, неудивительно, что каждую неделю к Curve приходят все новые заемщики.</p><div class="curve-table-container"><table class="dataframe curve-table crvusd-metric-column">
 <thead>
 <tr style="text-align: left;">
-<th>Метрика</th>
+<th>Показатель</th>
 <th>Значение</th>
 <th>Изменение</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Общий запас crvUSD</span></div></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Общий объем crvUSD</span></div></td>
 <td>$155.3M</td>
 <td><span class="positive-change">+3.75%</span></td>
 </tr>
@@ -233,12 +233,12 @@
 <td><span class="positive-change">+$0.0001</span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Средняя ставка заимствования</span></div></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Средняя процентная ставка займа</span></div></td>
 <td>1.626%</td>
 <td><span class="positive-change">+0.23%</span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Кредиты</span></div></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span>Заемы</span></div></td>
 <td>690</td>
 <td><span class="positive-change">+10</span></td>
 </tr>
@@ -253,10 +253,10 @@
 <td><span class="negative-change">-1.44M</span></td>
 </tr>
 </tbody>
-</table></div><h3 id="pool-statistics">Статистика пула</h3><p>Общий TVL пула вырос — это сильный сигнал на фоне бурного рынка.</p><div class="curve-table-container"><table class="dataframe curve-table">
+</table></div><h3 id="pool-statistics">Статистика пулов</h3><p>Общий TVL пула увеличился — это сильный сигнал на фоне нестабильного рынка.</p><div class="curve-table-container"><table class="dataframe curve-table">
 <thead>
 <tr style="text-align: left;">
-<th>Метрика</th>
+<th>Показатель</th>
 <th>Значение</th>
 <th>Изменение</th>
 </tr>
@@ -278,15 +278,15 @@
 <td><span class="negative-change">-13.57%</span></td>
 </tr>
 <tr>
-<td>🔄 Общие сборы</td>
+<td>🔄 Общие комиссии</td>
 <td>$296.9k</td>
 <td><span class="negative-change">-21.68%</span></td>
 </tr>
 </tbody>
-</table></div><h3 id="llamalend-performance">Производительность Llamalend</h3><p><a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer">Resupply</a>возможно, раскрыл секрет — все больше заемщиков и кредиторов открывают для себя преимущества<a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">Llamalend</a>каждую неделю.</p><div class="curve-table-container"><table class="dataframe curve-table">
+</table></div><h3 id="llamalend-performance">Performance Llamalend</h3><p><a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer">Resupply</a> возможно, раскрыли секрет — все больше заемщиков и кредиторов открывают преимущества <a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer">Llamalend</a> каждую неделю.</p><div class="curve-table-container"><table class="dataframe curve-table">
 <thead>
 <tr style="text-align: left;">
-<th>Метрика</th>
+<th>Показатель</th>
 <th>Значение</th>
 <th>Изменение</th>
 </tr>
@@ -298,25 +298,25 @@
 <td><span class="positive-change">+10.21%</span></td>
 </tr>
 <tr>
-<td>🦙 Предоставлено</td>
+<td>🦙 Поставлено</td>
 <td>$118.4M</td>
 <td><span class="positive-change">+7.12%</span></td>
 </tr>
 <tr>
-<td>🦙 Заемствовано</td>
+<td>🦙 Заем</td>
 <td>$57.97M</td>
 <td><span class="positive-change">+8.26%</span></td>
 </tr>
 <tr>
-<td>🦙 Кредиты</td>
+<td>🦙 Займы</td>
 <td>753</td>
 <td><span class="positive-change">+51</span></td>
 </tr>
 </tbody>
-</table></div><h2 id="notable-pool-activity">Значительная активность пула</h2><h3 id="highest-volume-pools">Пулы с наибольшим объемом</h3><p>На этой неделе никаких сюрпризов — ведущие пулы по объему остаются прежними.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+</table></div><h2 id="notable-pool-activity">Заметная активность пулов</h2><h3 id="highest-volume-pools">Пулы с наибольшим объемом</h3><p>На этой неделе нет сюрпризов — пулы с наибольшим объемом остаются теми же.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th>Цепочка</th>
+<th>Цепь</th>
 <th>Пул</th>
 <th>Объем</th>
 <th>TVL</th>
@@ -342,10 +342,10 @@
 <td>$88.04M</td>
 </tr>
 </tbody>
-</table></div><h3 id="recently-launched-pools">Недавно запущенные пулы</h3><p>На этой неделе было много новых запусков пулов — 6 пулов собрали более $50K TVL, в сумме добавлено более $18M. Ведущим является рынок<a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer">Napier</a>cUSDO, который теперь составляет более $12M TVL.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+</table></div><h3 id="recently-launched-pools">Недавно запущенные пулы</h3><p>Для новых запусков пулов это была большая неделя — 6 пулов, каждый из которых накопил более $50K в TVL, было добавлено более $18M в общей сложности. Ведущим является <a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer">рынок Napier</a> cUSDO, который теперь составляет более $12M в TVL.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th>Цепочка</th>
+<th>Цепь</th>
 <th>Пул</th>
 <th>TVL</th>
 </tr>
@@ -382,7 +382,7 @@
 <td>$63.91k</td>
 </tr>
 </tbody>
-</table></div><h3 id="highest-fee-generating-pools">Пулы с наибольшей генерацией комиссий</h3><p>С<a href="https://convexfinance.com/?ref=news.curve.fi" rel="noreferrer">Convex Finance</a>Курс токена управления CVX резко возрос на этой неделе, поэтому неудивительно, что их пул CVX/WETH возглавил рейтинги по генерации комиссий.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+</table></div><h3 id="highest-fee-generating-pools">Пулы с наибольшими выплатами</h3><p>С <a href="https://convexfinance.com/?ref=news.curve.fi" rel="noreferrer">Convex Finance</a>прибыль от токена управления CVX значительно возросла на этой неделе, неудивительно, что их пул CVX/WETH возглавил списки по генерированию комиссий.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
 <th>Цепочка</th>
@@ -412,18 +412,27 @@
 </tr>
 </tbody>
 </table></div><hr/><div class="button-wrapper">
-<div class="button-heading">Изучите возможности доходности</div>
+<div class="button-heading">
+        Изучите возможности доходности
+    </div>
 <div class="button-container">
-<a class="custom-button" href="https://curve.fi/?ref=news.curve.fi#/ethereum/pools" rel="noopener noreferrer" target="_blank">Перейти на DEX рынки</a>
+<a class="custom-button" href="https://curve.fi/?ref=news.curve.fi#/ethereum/pools" rel="noopener noreferrer" target="_blank">
+            Перейти на DEX-рынки
+        </a>
 </div>
 <div class="button-container">
-<a class="custom-button" href="https://lend.curve.fi/?ref=news.curve.fi#/ethereum/markets" rel="noopener noreferrer" target="_blank">Перейти на кредитные рынки</a>
+<a class="custom-button" href="https://lend.curve.fi/?ref=news.curve.fi#/ethereum/markets" rel="noopener noreferrer" target="_blank">
+            Перейти на рынки кредитования
+        </a>
 </div>
 <div class="button-container">
-<a class="custom-button" href="https://crvusd.curve.fi/?ref=news.curve.fi#/ethereum/scrvUSD" rel="noopener noreferrer" target="_blank">Перейти к накоплениям crvUSD</a>
+<a class="custom-button" href="https://crvusd.curve.fi/?ref=news.curve.fi#/ethereum/scrvUSD" rel="noopener noreferrer" target="_blank">
+            Перейти к сбережениям crvUSD
+        </a>
 </div>
 </div>
-<style>/* Center the entire button wrapper */
+<style>
+/* Center the entire button wrapper */
 .button-wrapper {
     display: flex;
     flex-direction: column;
@@ -520,7 +529,10 @@
     100% {
         background-position: 400% 50%;
     }
-}</style><p><strong><em>Экосистема Curve продолжает быстро развиваться, еженедельно принимая новые команды и пулы. Если вы заинтересованы в запуске пула, кредитного рынка или просто хотите пообщаться с сообществом, присоединяйтесь к нам в</em></strong><a href="https://t.me/curvefi?ref=news.curve.fi"><strong><em>Telegram</em></strong></a><strong><em>или</em></strong><a href="https://discord.gg/twUngQYz85?ref=news.curve.fi"><strong><em>Discord</em></strong></a><strong><em>.</em></strong></p><h2 id="risk-disclaimer">Отказ от риска</h2><blockquote>Ссылки на конкретные пулы или рынки Llamalend не являются одобрением их безопасности. Мы настоятельно рекомендуем проводить личный анализ рисков, прежде чем взаимодействовать с любыми пулом или рынком. Пожалуйста, ознакомьтесь с нашими подробными отказами от рисков:<a href="https://resources.curve.fi/risks-security/risks/pool/?ref=news.curve.fi">Отказ от рисков пула</a>,<a href="https://resources.curve.fi/risks-security/risks/lending/?ref=news.curve.fi">Отказ от рисков Llamalend</a>,<a href="https://resources.curve.fi/risks-security/risks/crvusd/?ref=news.curve.fi">Отказ от рисков crvUSD</a>.</blockquote><style>.negative-change {
+}
+</style><p><strong><em>Экосистема Curve продолжает быстро расширяться, еженедельно принимая новые команды и пулы. Если вас интересует запуск пула, рынка кредитования или просто хотите связаться с сообществом, присоединяйтесь к нам в </em></strong><a href="https://t.me/curvefi?ref=news.curve.fi"><strong><em>Telegram</em></strong></a><strong><em> или </em></strong><a href="https://discord.gg/twUngQYz85?ref=news.curve.fi"><strong><em>Discord</em></strong></a><strong><em>.</em></strong></p><h2 id="risk-disclaimer">Отказ от ответственности по рискам</h2><blockquote>Ссылки на конкретные пулы или рынки Llamalend не являются одобрением их безопасности. Мы настоятельно рекомендуем проводить личный анализ рисков перед взаимодействием с любыми пулами или рынками. Пожалуйста, ознакомьтесь с нашими подробными отказами от ответственности по рискам: <a href="https://resources.curve.fi/risks-security/risks/pool/?ref=news.curve.fi">Отказ от ответственности по рискам пула</a>, <a href="https://resources.curve.fi/risks-security/risks/lending/?ref=news.curve.fi">Отказ от ответственности по рискам Llamalend</a>, <a href="https://resources.curve.fi/risks-security/risks/crvusd/?ref=news.curve.fi">Отказ от ответственности по рискам crvUSD</a>.</blockquote><style>
+
+.negative-change {
   color: red;
 }
 
@@ -749,5 +761,6 @@ th{
 }
 .post-card-byline-content {
     margin-left: 0;
-}</style></section>
+}
+</style></section>
 </article>
