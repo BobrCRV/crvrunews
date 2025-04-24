@@ -1,356 +1,399 @@
-<article class="article post tag-yields tag-metrics tag-rewards">
+<head><meta content="width=device-width, initial-scale=1" name="viewport"/><style>
+    /* -------- RESET -------- */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font:16px/1.5 "Inter","Helvetica Neue",Arial,sans-serif;
+         background:#fff;color:#1F1E1B;}
+
+    img{max-width:100%;height:auto;display:block}
+    a{text-decoration:none;color:inherit}
+    h1,h2,h3{margin:1.2em 0 .5em;font-weight:600;line-height:1.2}
+
+    /* -------- CONTAINER -------- */
+    .gh-content{max-width:900px;margin:0 auto;padding:0 16px}
+
+    /* -------- TABLES -------- */
+    .curve-table{width:100%!important;border-collapse:collapse;
+                 margin:1rem 0;font-size:14px}
+    .curve-table th,
+    .curve-table td{border:1px solid #E0E0E0;padding:8px;vertical-align:middle}
+    .curve-table th{background:#F7F7F7;font-weight:600}
+
+    /* символические ячейки (иконки/пилюли) */
+    .token-pill-pool,.token-pill-borrow,.token-pill-collateral{
+        display:inline-flex;align-items:center;gap:4px;
+        padding:4px 8px;border-radius:9999px;font-weight:600;
+        white-space:nowrap;font-size:13px}
+    .token-pill-pool{background:#EEECEB}
+    .token-pill-borrow{background:#BBEDC0}
+    .token-pill-collateral{background:#DEDBD8}
+
+    /* network / metrics ячейки */
+    .network-cell,.metrics-name-cell{
+        display:flex;align-items:center;gap:8px;width:fit-content}
+
+    .network-icon,.token-icon{width:24px;height:24px;border-radius:50%}
+
+    /* ховер-подсветка строки */
+    .curve-table tbody tr:hover{background:#F0EFED}
+
+    /* скролл для узких экранов */
+    .curve-table-container{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+    /* убираем Ghost-овский полупрозрачный серый */
+    .gh-content, .gh-content *{color:#1F1E1B!important;opacity:1!important}
+    </style></head><article class="article post tag-yields tag-metrics tag-rewards">
 <header class="article-header gh-canvas">
 <div class="article-tag post-card-tags">
 <span class="post-card-primary-tag">
- <a href="https://news.curve.fi/tag/yields/"><br/>Доходность</a> 
+<a href="https://news.curve.fi/tag/yields/"></a>
 </span>
 </div>
-<h1 class="article-title"><br/>Лучшие доходности Curve и ключевые показатели | Неделя 17, 2025</h1>
-<p class="article-excerpt"><br/>Обновления еженедельной доходности и метрик экосистемы Curve по состоянию на 24 апреля 2025 года</p>
+<h1 class="article-title"></h1>
+
 <div class="article-byline">
 <section class="article-byline-content">
 <ul class="author-list instapaper_ignore">
 <li class="author-list-item">
- <a aria-label="Read more of Saint Rat" class="author-avatar" href="https://news.curve.fi/author/saint/">
+<a aria-label="Read more of Saint Rat" class="author-avatar" href="https://news.curve.fi/author/saint/">
 <img alt="Saint Rat" class="author-profile-image" src="https://news.curve.fi/content/images/size/w100/2024/10/saintrat.png"/>
-</a> 
+</a>
 </li>
 </ul>
 <div class="article-byline-meta">
-<h4 class="author-name"><a href="https://news.curve.fi/author/saint/"><br/>Saint Rat</a></h4>
+<h4 class="author-name"><a href="https://news.curve.fi/author/saint/"></a></h4>
 <div class="byline-meta-content">
-<time class="byline-meta-date" datetime="2025-04-24"><br/>24 апрель 2025</time>
-<span class="byline-reading-time"><span class="bull"><br/>•<br/></span><br/>Читайте за 12 минут</span>
+<time class="byline-meta-date" datetime="2025-04-24"></time>
+<span class="byline-reading-time"><span class="bull"></span></span>
 </div>
 </div>
 </section>
 </div>
 <figure class="article-image">
 <img alt="Curve Best Yields &amp; Key Metrics | Week 17, 2025" sizes="(min-width: 1400px) 1400px, 92vw" src="https://news.curve.fi/content/images/size/w2000/2025/04/curve-yields-week17-2025-banner-2.png" srcset="https://news.curve.fi/content/images/size/w300/2025/04/curve-yields-week17-2025-banner-2.png 300w, https://news.curve.fi/content/images/size/w600/2025/04/curve-yields-week17-2025-banner-2.png 600w, https://news.curve.fi/content/images/size/w1000/2025/04/curve-yields-week17-2025-banner-2.png 1000w, https://news.curve.fi/content/images/size/w2000/2025/04/curve-yields-week17-2025-banner-2.png 2000w"/>
-<figcaption><b><strong style="white-space: pre-wrap;"><br/>Лучшие доходности недели</strong></b><span style="white-space: pre-wrap;"><br/> : Первая — dTRINITY's</span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-48/deposit"><span style="white-space: pre-wrap;"><br/>dUSD/sfrxUSD пул</span></a><span style="white-space: pre-wrap;"><br/>с</span><b><strong style="white-space: pre-wrap;"><br/>99.6% доходностью</strong></b><span style="white-space: pre-wrap;"><br/>, а третья — их</span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-46/deposit"><span style="white-space: pre-wrap;"><br/>dUSD/sUSDe пул</span></a><span style="white-space: pre-wrap;"><br/>с</span><b><strong style="white-space: pre-wrap;"><br/>52.2%</strong></b><span style="white-space: pre-wrap;"><br/>доходностью, обе на Fraxtal. CrossCurve's</span><a href="https://curve.fi/dex/#/fantom/pools/factory-stable-ng-43/deposit"><span style="white-space: pre-wrap;"><br/>Stable 2 пул</span></a><span style="white-space: pre-wrap;"><br/>идет на втором месте с</span><b><strong style="white-space: pre-wrap;"><br/>56.0% доходностью</strong></b><span style="white-space: pre-wrap;"><br/>на стабильных долларовых активов на Fantom.</span></figcaption>
+<figcaption><b><strong style="white-space: pre-wrap;"></strong></b><span style="white-space: pre-wrap;"></span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-48/deposit"><span style="white-space: pre-wrap;"></span></a><span style="white-space: pre-wrap;"></span><b><strong style="white-space: pre-wrap;"></strong></b><span style="white-space: pre-wrap;"></span><a href="https://curve.fi/dex/#/fraxtal/pools/factory-stable-ng-46/deposit"><span style="white-space: pre-wrap;"></span></a><span style="white-space: pre-wrap;"></span><b><strong style="white-space: pre-wrap;"></strong></b><span style="white-space: pre-wrap;"></span><a href="https://curve.fi/dex/#/fantom/pools/factory-stable-ng-43/deposit"><span style="white-space: pre-wrap;"></span></a><span style="white-space: pre-wrap;"></span><b><strong style="white-space: pre-wrap;"></strong></b><span style="white-space: pre-wrap;"></span></figcaption>
 </figure>
 </header>
 <section class="gh-content gh-canvas">
-<h2 id="market-overview"><br/>Обзор рынка</h2><p><strong><br/>Какая же насыщенная неделя для Curve — TVL вырос на 6.63%, до $1.977 млрд.</strong></p><p><br/>На этой неделе есть много возможностей для доходности.<strong><br/>9 пулов и рынков кредитования предлагают более 38% дохода по USD-стейблкоинам</strong><br/>сейчас, многие из которых связаны с щедрыми стимулами, доступными на <a href="https://curve.fi/dex/optimism/pools/?ref=news.curve.fi" rel="noreferrer"><br/>пулах Optimism</a><br/>и <a href="https://curve.fi/lend/optimism/markets/?ref=news.curve.fi" rel="noreferrer"><br/>рынках кредитования</a><br/>.</p><p><a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer"><br/>Llamalend</a> и <a href="https://curve.fi/crvusd/ethereum/markets/?ref=news.curve.fi" rel="noreferrer"><br/>crvUSD</a><br/>по-прежнему показывают сильные показатели неделя за неделей, привлекая все больше заемщиков, использующих низкие ставки — и заимодавцы пожинают плоды <a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer"><br/>Resupply</a><br/>интеграции с <a href="https://curve.fi/?ref=news.curve.fi" rel="noreferrer"><br/>Curve</a><br/>.</p><p><a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer"><br/>Рынки Napier</a><br/>также стабильно растут, каждый неделя привлекая больше TVL. Ниже — основные события и показатели экосистемы.</p><h2 id="top-yields"><br/>Лучшие доходности</h2><h3 id="top-usd-stablecoin-yields"><br/>Лучшие доходности USD-стейблкоинов</h3>
-<br/><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+<h2 id="market-overview"></h2><h2 id="top-yields"></h2><h3 id="top-usd-stablecoin-yields"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Цепочка</th>
-<th><br/>Рынок</th>
-<th><br/>Тип</th>
-<th><br/>Доходность</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fraxtal.png" title="Fraxtal"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-48/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x788d96f655735f52c676a133f4dfc53cec614d4a.png"/><span><br/>dUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xfc00000000000000000000000000000000000008.png"/><span><br/>sfrxUSD</span></div></div></a></td>
-<td><br/>Пул</td>
-<td><br/>99.6%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-48/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x788d96f655735f52c676a133f4dfc53cec614d4a.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xfc00000000000000000000000000000000000008.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fantom.png" title="Fantom"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-43/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span><br/>CrossCurve Stable 2</span></div></div></a></td>
-<td><br/>Пул</td>
-<td><br/>56.0%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-43/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fraxtal.png" title="Fraxtal"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-46/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x788d96f655735f52c676a133f4dfc53cec614d4a.png"/><span><br/>dUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2.png"/><span><br/>sUSDe</span></div></div></a></td>
-<td><br/>Пул</td>
-<td><br/>52.2%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-46/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x788d96f655735f52c676a133f4dfc53cec614d4a.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fantom.png" title="Fantom"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-54/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span><br/>CrossCurve Stable 3</span></div></div></a></td>
-<td><br/>Пул</td>
-<td><br/>49.2%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-54/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-3/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000042.png"/><span><br/>OP</span></div></div></a></td>
-<td><br/>Llamalend</td>
-<td><br/>47.9%</td>
+<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-3/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000042.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-2/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x68f180fcce6836688e9084f035309e29bf0a2095.png"/><span><br/>WBTC</span></div></div></a></td>
-<td><br/>Llamalend</td>
-<td><br/>47.1%</td>
+<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-2/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x68f180fcce6836688e9084f035309e29bf0a2095.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-0/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000006.png"/><span><br/>WETH</span></div></div></a></td>
-<td><br/>Llamalend</td>
-<td><br/>40.0%</td>
+<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-0/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000006.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/lend/#/optimism/markets/one-way-market-1/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x1f32b1c2345538c0c6f582fcb022739c4a194ebb.png"/><span><br/>wstETH</span></div></div></a></td>
-<td><br/>Llamalend</td>
-<td><br/>39.9%</td>
+<td><a href="https://curve.fi/lend/#/optimism/markets/one-way-market-1/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x1f32b1c2345538c0c6f582fcb022739c4a194ebb.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-4/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x0994206dfe8de6ec6920ff4d779b0d950605fb53.png"/><span><br/>CRV</span></div></div></a></td>
-<td><br/>Llamalend</td>
-<td><br/>38.5%</td>
+<td><a href="https://curve.fi/lend/?ref=news.curve.fi#/optimism/markets/one-way-market-4/vault/deposit"><div class="pool-content"><div class="token-pill-borrow"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x0994206dfe8de6ec6920ff4d779b0d950605fb53.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table></div>
-<br/><h3 id="top-alternative-asset-yields"><br/>Лучшие доходности альтернативных активов</h3>
-<br/><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+<h3 id="top-alternative-asset-yields"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Цепочка</th>
-<th><br/>Пул</th>
-<th><br/>Тип</th>
-<th><br/>Доходность</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/sonic.png" title="Sonic"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/sonic/pools/factory-stable-ng-2/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span><br/>CrossCurve CRV</span></div></div></a></td>
-<td><br/>CRV</td>
-<td><br/>37.9%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/sonic/pools/factory-stable-ng-2/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fantom.png" title="Fantom"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-49/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span><br/>CrossCurve ETH 2</span></div></div></a></td>
-<td><br/>ETH</td>
-<td><br/>32.2%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fantom/pools/factory-stable-ng-49/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/crosscurve.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-tricrypto-47/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f.png"/><span><br/>GHO</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf.png"/><span><br/>cbBTC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"/><span><br/>WETH</span></div></div></a></td>
-<td><br/>TRICRYPTO</td>
-<td><br/>24.1%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-tricrypto-47/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/polygon.png" title="Polygon"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/polygon/pools/factory-tricrypto-6/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x172370d5cd63279efa6d502dab29171933a610af.png"/><span><br/>CRV</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x62d5a59e0d67c0381aad53b201b4a1b8dcd2c833.png"/><span><br/>vsdCRV</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x75289388d50364c3013583d97bd70ced0e183e32.png"/><span><br/>asdCRV</span></div></div></a></td>
-<td><br/>CRV</td>
-<td><br/>23.4%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/polygon/pools/factory-tricrypto-6/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x172370d5cd63279efa6d502dab29171933a610af.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x62d5a59e0d67c0381aad53b201b4a1b8dcd2c833.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-polygon/0x75289388d50364c3013583d97bd70ced0e183e32.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/fraxtal.png" title="Fraxtal"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-36/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xe162075a1c0ac7e985253972beca5e83da3bbaa4.png"/><span><br/>InfrxETH</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xfc00000000000000000000000000000000000005.png"/><span><br/>sfrxETH</span></div></div></a></td>
-<td><br/>ETH</td>
-<td><br/>22.2%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/fraxtal/pools/factory-stable-ng-36/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xe162075a1c0ac7e985253972beca5e83da3bbaa4.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-fraxtal/0xfc00000000000000000000000000000000000005.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-v2-290/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/mseth.png"/><span><br/>msETH</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x5e8422345238f34275888049021821e8e08caa1f.png"/><span><br/>frxETH</span></div></div></a></td>
-<td><br/>ETH</td>
-<td><br/>20.6%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-v2-290/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/saint-rat/curve-assets/refs/heads/main/images/mseth.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x5e8422345238f34275888049021821e8e08caa1f.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/optimism/pools/factory-tricrypto-0/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x68f180fcce6836688e9084f035309e29bf0a2095.png"/><span><br/>WBTC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000006.png"/><span><br/>WETH</span></div></div></a></td>
-<td><br/>TRICRYPTO</td>
-<td><br/>19.0%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/optimism/pools/factory-tricrypto-0/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x68f180fcce6836688e9084f035309e29bf0a2095.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x4200000000000000000000000000000000000006.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-v2-66/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8.png"/><span><br/>EURA</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc581b735a1688071a1746c968e0798d642ede491.png"/><span><br/>EURT</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdb25f211ab05b1c97d595516f45794528a807ad8.png"/><span><br/>EURS</span></div></div></a></td>
-<td><br/>EUR</td>
-<td><br/>6.8%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-v2-66/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc581b735a1688071a1746c968e0798d642ede491.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdb25f211ab05b1c97d595516f45794528a807ad8.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-183/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x661c70333aa1850ccdbae82776bb436a0fcfeefb.png"/><span><br/>EBTC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x18084fba666a33d37592fa2633fd49a74dd93a88.png"/><span><br/>tBTC</span></div></div></a></td>
-<td><br/>BTC</td>
-<td><br/>6.62%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-183/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x661c70333aa1850ccdbae82776bb436a0fcfeefb.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x18084fba666a33d37592fa2633fd49a74dd93a88.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/arbitrum.png" title="Arbitrum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/arbitrum/pools/factory-stable-ng-69/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-arbitrum/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f.png"/><span><br/>WBTC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-arbitrum/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40.png"/><span><br/>tBTC</span></div></div></a></td>
-<td><br/>BTC</td>
-<td><br/>5.1%</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/arbitrum/pools/factory-stable-ng-69/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-arbitrum/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-arbitrum/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table></div>
-<br/><h2 id="ecosystem-metrics"><br/>Показатели экосистемы</h2><p><em><br/>Все изменения (отображаются + или -) представляют собой разницу по сравнению с данными неделю назад.</em></p><h3 id="crvusd-scrvusd-metrics"><br/>Показатели crvUSD и scrvUSD</h3><p><br/>PegKeepers crvUSD продолжают работать, вмешиваясь для повышения ликвидности в пулах crvUSD и стабилизации паритета. Это облегчает крупным заемщикам использование заемных позиций без проблем.</p><p><br/>Если вы хотите занять по вашему ETH или BTC, Curve остается одним из лучших мест для этого — неудивительно, что с каждой неделей сюда приходит всё больше заемщиков.</p>
-<br/><div class="curve-table-container"><table class="dataframe curve-table crvusd-metric-column">
+<h2 id="ecosystem-metrics"></h2><h3 id="crvusd-scrvusd-metrics"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table crvusd-metric-column">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Показатель</th>
-<th><br/>Значение</th>
-<th><br/>Изменение</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Общий объем crvUSD</span></div></td>
-<td><br/>$155.3 млн</td>
-<td><span class="positive-change"><br/>+3.75%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Долг crvUSD</span></div></td>
-<td><br/>$111 млн</td>
-<td><span class="positive-change"><br/>+6.79%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x0655977feb2f289a4ab78af67bab0d17aab84367.png"/><span><br/>Доходность scrvUSD</span></div></td>
-<td><br/>0.79% APY</td>
-<td><span class="negative-change"><br/>-1.52%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x0655977feb2f289a4ab78af67bab0d17aab84367.png"/><span></span></div></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>crvUSD в</span><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x0655977feb2f289a4ab78af67bab0d17aab84367.png"/><span><br/>scrvUSD</span></div></td>
-<td><br/>28.33%</td>
-<td><span class="positive-change"><br/>+0.68%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x0655977feb2f289a4ab78af67bab0d17aab84367.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Паритет crvUSD</span></div></td>
-<td><br/>$1.0001</td>
-<td><span class="positive-change"><br/>+$0.0001</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Средняя ставка займов</span></div></td>
-<td><br/>1.626%</td>
-<td><span class="positive-change"><br/>+0.23%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Займы</span></div></td>
-<td><br/>690</td>
-<td><span class="positive-change"><br/>+10</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Комиссии</span></div></td>
-<td><br/>$24.65 тыс.</td>
-<td><span class="negative-change"><br/>-57.35%</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 <tr>
-<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span><br/>Долг Pegkeeper</span></div></td>
-<td><br/>44.39 млн</td>
-<td><span class="negative-change"><br/>-1.44 млн</span></td>
+<td><div class="metrics-name-cell"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xf939e0a03fb07f59a73314e73794be0e57ac1b4e.png"/><span></span></div></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 </tbody>
 </table></div>
-<br/><h3 id="pool-statistics"><br/>Статистика пула</h3><p><br/>Общий TVL пула вырос — сильный сигнал в условиях турбулентного рынка.</p>
-<br/><div class="curve-table-container"><table class="dataframe curve-table">
+<h3 id="pool-statistics"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Показатель</th>
-<th><br/>Значение</th>
-<th><br/>Изменение</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><br/>🔄 TVL</td>
-<td><br/>$1.647 млрд</td>
-<td><span class="positive-change"><br/>+4.90%</span></td>
+<td></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><br/>🔄 Объем</td>
-<td><br/>$1.456 млрд</td>
-<td><span class="negative-change"><br/>-6.12%</span></td>
+<td></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 <tr>
-<td><br/>🔄 Сделки</td>
-<td><br/>336 342</td>
-<td><span class="negative-change"><br/>-13.57%</span></td>
+<td></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 <tr>
-<td><br/>🔄 Общие сборы</td>
-<td><br/>$296.9 тыс.</td>
-<td><span class="negative-change"><br/>-21.68%</span></td>
+<td></td>
+<td></td>
+<td><span class="negative-change"></span></td>
 </tr>
 </tbody>
 </table></div>
-<br/><h3 id="llamalend-performance"><br/>Производительность Llamalend</h3><p><a href="https://resupply.fi/?ref=news.curve.fi" rel="noreferrer"><br/>Resupply</a><br/>возможно, раскрыли карты — все больше заемщиков и заимодавцев узнают о преимуществах <a href="https://curve.fi/lend/ethereum/markets/?ref=news.curve.fi" rel="noreferrer"><br/>Llamalend</a><br/>каждой неделей.</p>
-<br/><div class="curve-table-container"><table class="dataframe curve-table">
+<h3 id="llamalend-performance"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Показатель</th>
-<th><br/>Значение</th>
-<th><br/>Изменение</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><br/>🦙 Объем заемных средств TVL</td>
-<td><br/>$136.1 млн</td>
-<td><span class="positive-change"><br/>+10.21%</span></td>
+<td></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><br/>🦙 Предоставлено</td>
-<td><br/>$118.4 млн</td>
-<td><span class="positive-change"><br/>+7.12%</span></td>
+<td></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><br/>🦙 Занято</td>
-<td><br/>$57.97 млн</td>
-<td><span class="positive-change"><br/>+8.26%</span></td>
+<td></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 <tr>
-<td><br/>🦙 Займы</td>
-<td><br/>753</td>
-<td><span class="positive-change"><br/>+51</span></td>
+<td></td>
+<td></td>
+<td><span class="positive-change"></span></td>
 </tr>
 </tbody>
 </table></div>
-<br/><h2 id="notable-pool-activity"><br/>Значимая активность в пулах</h2><h3 id="highest-volume-pools"><br/>Пулы с наибольшим объемом</h3><p><br/>Очередь без сюрпризов — крупнейшие объемы у привычных участников.</p>
-<br/><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+<h2 id="notable-pool-activity"></h2><h3 id="highest-volume-pools"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th><br/>Цепочка</th>
-<th><br/>Пул</th>
-<th><br/>Объем</th>
-<th><br/>TVL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/3pool/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"/><span><br/>DAI</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/><span><br/>USDC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span><br/>USDT</span></div></div></a></td>
-<td><br/>$272.5 млн</td>
-<td><br/>$177 млн</td>
-</tr>
-<tr>
-<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-355/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/><span><br/>USDC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span><br/>USDT</span></div></div></a></td>
-<td><br/>$146.3 млн</td>
-<td><br/>$11.65 млн</td>
-</tr>
-<tr>
-<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/steth/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png"/><span><br/>ETH</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xae7ab96520de3a18e5e111b5eaab095312d7fe84.png"/><span><br/>stETH</span></div></div></a></td>
-<td><br/>$141.6 млн</td>
-<td><br/>$88.04 млн</td>
-</tr>
-</tbody>
-</table></div>
-<br/><h3 id="recently-launched-pools"><br/>Недавно запущенные пулы</h3><p><br/>Это была насыщенная неделя — запущено 6 новых пулов, каждый из которых набрал более $50K TVL, в общей сложности добавлено свыше $18 млн. В лидерах — <a href="https://napier.finance/?ref=news.curve.fi" rel="noreferrer"><br/>Napier</a> рынок cUSDO, сейчас свыше $12 млн TVL.</p>
-<br/><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
-<thead>
-<tr style="text-align: left;">
-<th><br/>Цепочка</th>
-<th><br/>Пул</th>
-<th><br/>TVL</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-twocrypto-168/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0.png"/><span><br/>cUSDO</span></div><div class="token-pill-pool"><img class="token-icon" src="https://curve.fi/images/default-crypto.png"/><span><br/>PT-cUSDO@15/6/2025</span></div></div></a></td>
-<td><br/>$12.26 млн</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/3pool/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-411/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd.png"/><span><br/>sUSDS</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span><br/>USDT</span></div></div></a></td>
-<td><br/>$5.204 млн</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-355/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/steth/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xae7ab96520de3a18e5e111b5eaab095312d7fe84.png"/><span></span></div></div></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="recently-launched-pools"></h3>
+<div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+<thead>
+<tr style="text-align: left;">
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-twocrypto-168/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xad55aebc9b8c03fc43cd9f62260391c13c23e7c0.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://curve.fi/images/default-crypto.png"/><span></span></div></div></a></td>
+<td></td>
+</tr>
+<tr>
+<td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-411/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa3931d71877c0e7a3148cb7eb4463524fec27fbd.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span></span></div></div></a></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/optimism.png" title="Optimism"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/optimism/pools/factory-stable-ng-63/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span><br/>crvUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x289f635106d5b822a505b39ac237a0ae9189335b.png"/><span><br/>scrvUSD</span></div></div></a></td>
-<td><br/>$243.5 тыс.</td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/optimism/pools/factory-stable-ng-63/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0xc52d7f23a2e460248db6ee192cb23dd12bddcbf6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets-optimism/0x289f635106d5b822a505b39ac237a0ae9189335b.png"/><span></span></div></div></a></td>
+<td></td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
-<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-179/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x8c0d76c9b18779665475f3e212d9ca1ed6a1a0e6.png"/><span><br/>zunUSD</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x085780639cc2cacd35e474e71f4d000e2405d8f6.png"/><span>fxUSD</span></div></div></a></td>
+<td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-stable-ng-179/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x8c0d76c9b18779665475f3e212d9ca1ed6a1a0e6.png"/><span></span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x085780639cc2cacd35e474e71f4d000e2405d8f6.png"/><span>fxUSD</span></div></div></a></td>
 <td>$222,9k</td>
 </tr>
 <tr>
@@ -364,10 +407,10 @@
 <td>$63,91k</td>
 </tr>
 </tbody>
-</table></div><h3 id="highest-fee-generating-pools">Самые доходные пулы по комиссионным</h3><p>С <a href="https://convexfinance.com/?ref=news.curve.fi" rel="noreferrer">Convex Finance</a> Токен управления CVX растет значительно на этой неделе, неудивительно, что их пул CVX/WETH занимает лидирующие позиции по сбору комиссий.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
+</table></div><h3 id="highest-fee-generating-pools">Пулы с наибольшей комиссией</h3><p>С<a href="https://convexfinance.com/?ref=news.curve.fi" rel="noreferrer">Convex Finance</a>'Токен управления CVX растет значительно на этой неделе, неудивительно, что их пул CVX/WETH занял лидирующие позиции по генерации комиссий.</p><div class="curve-table-container"><table class="dataframe curve-table chain-column pool-column">
 <thead>
 <tr style="text-align: left;">
-<th>Блокчейн</th>
+<th>Цепочка</th>
 <th>Пул</th>
 <th>Комиссии</th>
 <th>Объем</th>
@@ -377,35 +420,35 @@
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
 <td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/cvxeth/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"/><span>WETH</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b.png"/><span>CVX</span></div></div></a></td>
-<td>$25.27k</td>
-<td>$7.012М</td>
+<td>$25,27k</td>
+<td>$7.012M</td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
 <td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/3pool/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x6b175474e89094c44da98b954eedeac495271d0f.png"/><span>DAI</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/><span>USDC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span>USDT</span></div></div></a></td>
 <td>$21,8k</td>
-<td>$272.5М</td>
+<td>$272,5M</td>
 </tr>
 <tr>
 <td><div class="network-cell"><img class="network-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/chains/ethereum.png" title="Ethereum"/></div></td>
 <td><a href="https://curve.fi/dex/?ref=news.curve.fi#/ethereum/pools/factory-tricrypto-1/deposit"><div class="pool-content"><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xdac17f958d2ee523a2206206994597c13d831ec7.png"/><span>USDT</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/><span>WBTC</span></div><div class="token-pill-pool"><img class="token-icon" src="https://raw.githubusercontent.com/curvefi/curve-assets/refs/heads/main/images/assets/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"/><span>WETH</span></div></div></a></td>
 <td>$18,61k</td>
-<td>$8.328М</td>
+<td>$8.328M</td>
 </tr>
 </tbody>
 </table></div><hr/><div class="button-wrapper">
-<div class="button-heading">Исследуйте возможности получения дохода</div>
+<div class="button-heading">Исследуйте возможности доходности</div>
 <div class="button-container">
- <a class="custom-button" href="https://curve.fi/?ref=news.curve.fi#/ethereum/pools" rel="noopener noreferrer" target="_blank">Перейти к DEX-рынкам</a> 
-</div>
-<div class="button-container">
- <a class="custom-button" href="https://lend.curve.fi/?ref=news.curve.fi#/ethereum/markets" rel="noopener noreferrer" target="_blank">Перейти к маркета́м заимствований</a> 
+<a class="custom-button" href="https://curve.fi/?ref=news.curve.fi#/ethereum/pools" rel="noopener noreferrer" target="_blank">Перейти к рынкам DEX</a>
 </div>
 <div class="button-container">
- <a class="custom-button" href="https://crvusd.curve.fi/?ref=news.curve.fi#/ethereum/scrvUSD" rel="noopener noreferrer" target="_blank">Перейти к сбережениям crvUSD</a> 
+<a class="custom-button" href="https://lend.curve.fi/?ref=news.curve.fi#/ethereum/markets" rel="noopener noreferrer" target="_blank">Перейти к рынкам кредитования</a>
+</div>
+<div class="button-container">
+<a class="custom-button" href="https://crvusd.curve.fi/?ref=news.curve.fi#/ethereum/scrvUSD" rel="noopener noreferrer" target="_blank">Перейти к сбережениям crvUSD</a>
 </div>
 </div>
-<style>/* Центрирование всей обертки кнопки */
+<style>/* Центрирование всего блока кнопок */
 .button-wrapper {
     display: flex;
     flex-direction: column;
@@ -414,22 +457,22 @@
     gap: 8px;
 }
 
-/* Стиль для заголовка над кнопкой */
+/* Стиль заголовка над кнопкой */
 .button-heading {
-    font-size: 24px; /* Корректировка размера для жирного и крупного текста */
+    font-size: 24px; /* Регулировка размера для жирного и крупного текста */
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 15px; /* Пространство между заголовком и кнопкой */
+    margin-bottom: 15px; /* Расстояние между заголовком и кнопкой */
 }
 
-/* Центрирование контейнера кнопки */
+/* Центрирование контейнера кнопок */
 .button-container {
     display: flex;
     justify-content: center;
 }
 
-/* Пользовательские стили кнопки для всех состояний ссылок */
+/* Пользовательские стили кнопки для всех состояний */
 .custom-button,
 .custom-button:link,
 .custom-button:visited,
@@ -460,17 +503,17 @@
     color: #ffffff !important;
 }
 
-/* Состояния при наведении, нажатии и фокусе */
+/* Состояния при наведении, активном и фокусе */
 .custom-button:hover,
 .custom-button:active,
 .custom-button:focus {
     background-color: #0053bf; /* Цвет фона при наведении */
-    color: #ffffff; /* Цвет текста остается неизменным */
+    color: #ffffff; /* Цвет текста остается таким же */
     text-decoration: none; /* Удаление подчеркивания */
-    outline: none; /* Удаление контура фокуса */
+    outline: none; /* Удаление рамки при фокусе */
 }
 
-/* Анимированная свечение границ */
+/* Анимированная светящаяся рамка */
 .custom-button::before {
     content: '';
     position: absolute;
@@ -487,7 +530,7 @@
     border-radius: 28px;
 }
 
-/* Эффекты при наведении для свечения границ */
+/* Эффекты при наведении для светящейся рамки */
 .custom-button:hover::before,
 .custom-button:active::before,
 .custom-button:focus::before {
@@ -503,7 +546,7 @@
     100% {
         background-position: 400% 50%;
     }
-}</style><p><strong><em>Экосистема Curve продолжает быстро расширяться, еженедельно приветствуя новые команды и пулы. Если вы заинтересованы в запуске пула, маркета заимствований или просто хотите присоединиться к сообществу, присоединяйтесь к нам на</em></strong><a href="https://t.me/curvefi?ref=news.curve.fi"><strong><em>Telegram</em></strong></a><strong><em>или</em></strong><a href="https://discord.gg/twUngQYz85?ref=news.curve.fi"><strong><em>Discord</em></strong></a><strong><em>.</em></strong></p><h2 id="risk-disclaimer">Отказ от ответственности</h2><blockquote>Упоминания конкретных пулов или рынков Llamalend не означают их рекомендуемость или безопасность. Мы настоятельно рекомендуем проводить личный анализ рисков перед участием в любом пуле или рынке. Ознакомьтесь с нашими подробными отказами от ответственности: <a href="https://resources.curve.fi/risks-security/risks/pool/?ref=news.curve.fi">Отказ от ответственности по рискам пулов</a> , <a href="https://resources.curve.fi/risks-security/risks/lending/?ref=news.curve.fi">Отказ от ответственности Llamalend</a> , <a href="https://resources.curve.fi/risks-security/risks/crvusd/?ref=news.curve.fi">Отказ от ответственности по crvUSD</a> .</blockquote><style>.negative-change {
+}</style><p><strong><em>Экосистема Curve продолжает быстро расширяться, еженедельно приветствуя новые команды и пулы. Если вы заинтересованы в запуске пула, рынка заимствований или просто хотите связаться с сообществом, присоединяйтесь к нам в</em></strong><a href="https://t.me/curvefi?ref=news.curve.fi"><strong><em>Telegram</em></strong></a><strong><em>или</em></strong><a href="https://discord.gg/twUngQYz85?ref=news.curve.fi"><strong><em>Discord</em></strong></a><strong><em>.</em></strong></p><h2 id="risk-disclaimer">Дисклеймер риска</h2><blockquote>Упоминания конкретных пулов или рынков Llamalend не являются подтверждением их безопасности. Мы настоятельно рекомендуем проводить собственный анализ рисков перед взаимодействием с любыми пулами или рынками. Ознакомьтесь с нашими подробными дисклеймерами риска:<a href="https://resources.curve.fi/risks-security/risks/pool/?ref=news.curve.fi">Дисклеймер риска пула</a>,<a href="https://resources.curve.fi/risks-security/risks/lending/?ref=news.curve.fi">Дисклеймер риска Llamalend</a>,<a href="https://resources.curve.fi/risks-security/risks/crvusd/?ref=news.curve.fi">Дисклеймер риска crvUSD</a>.</blockquote><style>.negative-change {
   color: red;
 }
 
@@ -553,7 +596,7 @@
 
 .gh-content.gh-canvas {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE и Edge */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .gh-content.gh-canvas::-webkit-scrollbar {
@@ -647,7 +690,7 @@
   flex-shrink: 0;
 }
 
-/* Ограничение стилей th и td для нашей конкретной таблицы */
+/* Ограничение стилей th и td только нашим таблицам */
 .curve-table th,
 .curve-table td {
   text-align: left;
